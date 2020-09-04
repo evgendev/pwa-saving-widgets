@@ -27,8 +27,8 @@ export default {
           })(window,document,"script","https://widgets.mobsted.com/w4pwa.js","w4pwa");
           w4pwa.config = {
             accountId: "a7db574a",
-            projectId: 93,
-            clientId: 93,
+            projectId: 94,
+            clientId: 94,
           }
         `
       }

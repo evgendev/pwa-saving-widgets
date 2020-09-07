@@ -1,7 +1,7 @@
 <template>
   <div>
     <app-textlockup />
-    <app-sales-boxes />
+<!--    <app-sales-boxes />-->
     <app-featured-products />
   </div>
 </template>

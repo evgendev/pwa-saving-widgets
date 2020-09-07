@@ -6,9 +6,9 @@
         <li>
           <nuxt-link exact to="/">Home</nuxt-link>
         </li>
-        <li>
-          <nuxt-link to="/all">Products</nuxt-link>
-        </li>
+<!--        <li>-->
+<!--          <nuxt-link to="/all">Products</nuxt-link>-->
+<!--        </li>-->
         <!-- <li>
           <nuxt-link to="/women">Women</nuxt-link>
         </li>
@@ -19,9 +19,9 @@
           <div class="carttotal" v-if="cartCount > 0">{{ cartCount }}</div>
           <nuxt-link to="/cart">Cart</nuxt-link>
         </li>
-        <li>
-          <button class="install-pwa" onclick="w4pwa.showWidget('coupon')">Install App</button>
-        </li>
+<!--        <li>-->
+<!--          <button class="install-pwa" onclick="w4pwa.showWidget('coupon')">Install App</button>-->
+<!--        </li>-->
       </ul>
     </nav>
   </header>

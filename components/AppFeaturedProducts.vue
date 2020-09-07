@@ -1,39 +1,70 @@
 <template>
   <section>
     <h2>
-      <span>Featured Products</span>
+      <span>Special Offers</span>
     </h2>
     <div class="featureditems">
       <div class="item" v-for="product in featuredProducts" :key="product.id">
         <img :src="`/products/${product.img}`" />
         <h3>{{ product.name }}</h3>
         <h4>{{ product.price | dollar }}</h4>
-        <NuxtLink :to="`/product/${product.id}`">
-          <button class="multi-item">View Item ></button>
-        </NuxtLink>
+<!--        <NuxtLink :to="`/product/${product.id}`">-->
+        <button class="multi-item" @click="cartAdd(product)">Add to Shopping Cart</button>
+<!--        </NuxtLink>-->
       </div>
+    </div>
+    <div class="install-pwa">
+      <button class="install-pwa" onclick="w4pwa.showWidget('coupon')">Save our shop to Access Offers</button>
     </div>
   </section>
 </template>
 
 <script>
 export default {
+  data: () => ({
+    quantity: 1,
+    tempcart: [] // this object should be the same as the json store object, with additional params, quantity and size
+  }),
   computed: {
     featuredProducts() {
       return this.$store.getters.featuredProducts;
+    }
+  },
+  methods: {
+    cartAdd(product) {
+      // if (this.product.sizes && !this.size) {
+      //   this.showSizeRequiredMessage = true;
+      //   return;
+      // }
+
+      let item = product;
+      item = {
+        ...item,
+        quantity: this.quantity,
+        // size: this.size
+      };
+      this.tempcart.push(item);
+      this.$store.commit("addToCart", {...item});
+      this.$router.push('cart')
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
+.install-pwa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 section {
   margin-top: 60px;
 }
 
 .featureditems {
   width: 100%;
-  margin: 20px 0 70px;
+  margin: 20px 0 50px;
   .item {
     border: 1px solid #eee2dc;
     box-shadow: 0 3px 10px 0px #eee;

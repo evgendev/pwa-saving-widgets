@@ -53,7 +53,9 @@ main {
   main {
     padding: 40px;
     width: 80vw;
-    margin-left: 7vw;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 </style>

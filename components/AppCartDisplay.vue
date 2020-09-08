@@ -91,6 +91,13 @@ export default {
   float: left;
   margin-right: 15px;
   width: 100px;
+
+  @media screen and (max-width: 600px) {
+    width: 80px;
+    float: none;
+    margin-right: 0;
+  }
+
 }
 
 .total {
@@ -130,6 +137,12 @@ th {
 
 .product-name {
   padding-top: 36px;
+
+  @media screen and (max-width: 600px) {
+    padding-top: 0;
+    text-align: center;
+    font-size: 15px;
+  }
 }
 
 .product-size {

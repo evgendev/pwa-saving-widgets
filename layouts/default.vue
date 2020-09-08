@@ -45,8 +45,6 @@ body {
 
 main {
   padding: 0;
-  width: 95vw;
-  margin-left: 2vw;
 }
 
 @media screen and (min-width: 1000px) {

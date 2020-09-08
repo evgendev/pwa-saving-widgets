@@ -3,6 +3,10 @@
     <app-textlockup />
 <!--    <app-sales-boxes />-->
     <app-featured-products />
+
+    <div class="install-pwa-section">
+      <button class="install-pwa" onclick="w4pwa.showWidget('coupon')">Save our shop to Access Offers</button>
+    </div>
   </div>
 </template>
 
@@ -20,7 +24,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
 .test {
   margin: 3vh;
 }

@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>Skyline Ivy</h1>
+    <h1>Sample PWA Prompt</h1>
     <nav>
       <ul>
         <li>
@@ -38,11 +38,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.install-pwa {
-  padding: 10px 16px;
-  font-size: 13px;
-  text-transform: uppercase;
-}
 header {
   display: flex;
   justify-content: center;
@@ -96,6 +91,12 @@ nav {
   font-size: 10px;
   padding: 6px 10px;
   font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 26px;
+  }
 }
 
 @media screen and (max-width: 850px) {

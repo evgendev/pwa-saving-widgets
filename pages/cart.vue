@@ -25,11 +25,12 @@
       <p>Oops, something went wrong. Redirecting you to your cart to try again.</p>
     </section>
 
-    <div style="text-align: center; margin-top: 3em;">
-      <button class="install-pwa" onclick="w4pwa.showWidget('cart')">Save Access to Cart as App</button>
+    <div style="margin-top: 3em;">
+      <div class="install-pwa-section">
+        <button class="install-pwa" onclick="w4pwa.showWidget('cart')">Save Access to Cart as App</button>
+      </div>
     </div>
 
-    <app-sales-boxes/>
   </div>
 </template>
 
@@ -49,6 +50,9 @@ export default {
   },
   computed: {
     ...mapState(["cartUIStatus"])
+  },
+  mounted() {
+    setTimeout(() => w4pwa.showWidget('cart'), 500)
   }
 };
 </script>

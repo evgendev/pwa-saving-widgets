@@ -5,6 +5,9 @@ let dynamicRoutes = () => {
   });
 };
 
+const IS_DEV = (process.env.NODE_ENV === 'development')
+const scriptURL = !IS_DEV ? 'https://widgets.mobsted.com/w4pwa.js' : 'http://localhost:9000/w4pwa/w4pwa.js'
+
 export default {
   mode: "universal",
   /*
@@ -24,7 +27,7 @@ export default {
           (function(m,o,b,s,t,e,d){
             m[t]=m[t]||{},e=o.createElement(b),d=o.getElementsByTagName(b)[0],
               e.async=1,e.src=s,d.parentNode.insertBefore(e,d)
-          })(window,document,"script","https://widgets.mobsted.com/w4pwa.js","w4pwa");
+          })(window,document,"script","${scriptURL}","w4pwa");
           w4pwa.config = {
             accountId: "a7db574a",
             projectId: 94,

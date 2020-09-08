@@ -37,12 +37,18 @@ section {
   text-align: center;
   width: 80%;
   margin: 20px auto 0;
+
+  @media screen and (max-width: 600px) {
+    width: 90%;
+  }
+
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 }
+
 
 h2 {
   width: 80px;
@@ -56,6 +62,12 @@ h2 {
     border: 1px solid #d96528;
     color: white;
   }
+
+  @media screen and (max-width: 600px) {
+    width: 60px;
+    height: 60px;
+    padding-top: 13px;
+  }
 }
 
 h4 {
@@ -65,7 +77,7 @@ h4 {
 
 @media screen and (max-width: 600px) {
   section {
-    grid-column-gap: 30px !important;
+    grid-column-gap: 20px !important;
   }
 }
 </style>

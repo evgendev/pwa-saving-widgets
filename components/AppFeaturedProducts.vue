@@ -9,12 +9,9 @@
         <h3>{{ product.name }}</h3>
         <h4>{{ product.price | dollar }}</h4>
 <!--        <NuxtLink :to="`/product/${product.id}`">-->
-        <button class="multi-item" @click="cartAdd(product)">Add to Shopping Cart</button>
+        <button class="install-pwa" @click="cartAdd(product)">Add to Cart</button>
 <!--        </NuxtLink>-->
       </div>
-    </div>
-    <div class="install-pwa">
-      <button class="install-pwa" onclick="w4pwa.showWidget('coupon')">Save our shop to Access Offers</button>
     </div>
   </section>
 </template>
@@ -52,12 +49,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.install-pwa {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
+
 section {
   margin-top: 60px;
 }

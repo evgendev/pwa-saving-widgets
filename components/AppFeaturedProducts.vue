@@ -4,12 +4,12 @@
       <span>Special Offers</span>
     </h2>
     <div class="featureditems">
-      <div class="item" v-for="product in featuredProducts" :key="product.id">
+      <div class="item" v-for="(product, $ind) in featuredProducts" :key="product.id">
         <img :src="`/products/${product.img}`" />
         <h3>{{ product.name }}</h3>
         <h4>{{ product.price | dollar }}</h4>
 <!--        <NuxtLink :to="`/product/${product.id}`">-->
-        <button class="install-pwa" @click="cartAdd(product)">Add to Cart</button>
+        <button class="install-pwa" :class="{'is-outlined': $ind > 0}" @click="cartAdd(product)">Add to Cart</button>
 <!--        </NuxtLink>-->
       </div>
     </div>

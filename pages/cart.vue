@@ -27,7 +27,7 @@
 
     <div style="margin-top: 3em;">
       <div class="install-pwa-section">
-        <button class="install-pwa" onclick="w4pwa.showWidget('cart')">Save Access to Cart as App</button>
+        <button class="install-pwa" onclick="w4pwa.showWidget('tracking')">Install app to track your order</button>
       </div>
     </div>
 

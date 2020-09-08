@@ -1,6 +1,6 @@
 <template>
   <header>
-    <h1>Sample PWA Prompt</h1>
+    <h1>Sample PWA Saving Prompt</h1>
     <nav>
       <ul>
         <li>
@@ -95,7 +95,7 @@ nav {
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 26px;
+    font-size: 20px;
   }
 }
 

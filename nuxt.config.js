@@ -14,7 +14,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: "Skyline Ivy",
+    title: "Sample PWA Saving Prompts",
     script: [
       { src: "https://js.stripe.com/v3/" },
       {
@@ -77,11 +77,11 @@ export default {
   modules: ["@nuxtjs/pwa"],
   pwa: {
     icon: {
-      fileName: "icon512x512.png"
+      fileName: "icon600x600.png"
     },
     manifest: {
-      name: "Skyline Ivy",
-      short_name: "SI store",
+      name: "Sample PWA Saving Prompt",
+      short_name: "PWA Prompt",
       start_url: "/?source=pwa",
       description: "My firts PWA website",
       background_color: "#2b2b2b",

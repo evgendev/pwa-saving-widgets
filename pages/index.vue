@@ -30,6 +30,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+h1.heading {
+  @media screen and (max-width: 600px) {
+    font-size: 26px;
+  }
+}
+h2.heading {
+  @media screen and (max-width: 600px) {
+    font-size: 20px;
+  }
+}
 .heading {
   text-align: center;
   span {

@@ -80,14 +80,6 @@ export default {
     height: 100%;
   }
 
-  &__install {
-    display: none;
-
-    @media screen and (max-width: 600px) {
-      display: block;
-    }
-  }
-
   @media screen and (max-width: 600px) {
     position: fixed;
     left: 0;

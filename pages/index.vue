@@ -5,7 +5,7 @@
 
     <div>
       <h1 class="heading"><span>Follow the</span> <span class="btn install-pwa">Electric Buttons</span></h1>
-      <h2 class="heading">There are 3 different saving prompts, each with own value and timing.<br>Open on any mobile, tablet or desktop.</h2>
+      <h2 class="heading">There are 4 different saving prompts, each with own value and timing.<br>Open on any mobile, tablet or desktop.</h2>
     </div>
     <app-featured-products />
 
